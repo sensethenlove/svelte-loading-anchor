@@ -61,6 +61,9 @@ function onAnchorlick(e) {
 .loading-anchor :global(*) {
   transition: all 0.3s;
 }
+.loading-anchor :global(svg *) {
+  transition: initial;
+}
 .loading-anchor__loading-icon {
   position: absolute;
   z-index: -1;

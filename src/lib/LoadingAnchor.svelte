@@ -8,8 +8,8 @@
   export let ssr: boolean = false
   export let loadWidth: 'standard' | 'big' | 'huge' = 'standard'
 
-  let isLoading: boolean = true
-  // afterNavigate(() => isLoading = false)
+  let isLoading: boolean = false
+  afterNavigate(() => isLoading = false)
 
   function onAnchorlick (e: Event) {
     if ($page.url.href.endsWith(href)) {} // if href is current url do not show loading indicator
