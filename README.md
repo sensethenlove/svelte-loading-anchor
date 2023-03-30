@@ -29,7 +29,7 @@ pnpm add @sensethenlove/svelte-loading-anchor
 ```svelte
 <script lang="ts">
   import '$lib/styles.scss'
-  import LoadingAnchor from '$lib/LoadingAnchor.svelte'
+  import { LoadingAnchor } from '@sensethenlove/svelte-loading-anchor'
 </script>
 
 <LoadingAnchor href="/test" label="Test" />

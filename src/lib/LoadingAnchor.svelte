@@ -8,8 +8,8 @@
   export let ssr: boolean = false
   export let loadWidth: 'standard' | 'big' | 'huge' = 'standard'
 
-  let isLoading: boolean = false
-  afterNavigate(() => isLoading = false)
+  let isLoading: boolean = true
+  // afterNavigate(() => isLoading = false)
 
   function onAnchorlick (e: Event) {
     if ($page.url.href.endsWith(href)) {} // if href is current url do not show loading indicator
@@ -71,8 +71,12 @@
       }
     }
 
-    :global(*) {
+    :global(*)  {
       transition: all 0.3s;
+    }
+
+    :global(svg *) {
+      transition: initial;
     }
 
     &__loading-icon {
