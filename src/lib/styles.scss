@@ -1,0 +1,8 @@
+.loading-anchor {
+  color: green;
+  text-decoration: none;
+  font-family: system-ui;
+  &:hover {
+    text-decoration: underline;
+  }
+}
